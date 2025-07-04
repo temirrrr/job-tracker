@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/job-tracker">
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login"    element={<Login />} />
