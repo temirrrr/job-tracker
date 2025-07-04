@@ -1,0 +1,11 @@
+# Python venv и БД
+backend/.venv/
+backend/jobs.db
+
+# Node.js
+frontend/node_modules/
+frontend/dist/
+
+# IDE/OS
+.vscode/
+*.log
