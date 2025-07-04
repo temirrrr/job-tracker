@@ -1,5 +1,5 @@
 // src/pages/Dashboard.tsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import API from '../api';
 import JobForm from '../components/JobForm';
 import type { Job } from '../components/JobForm';

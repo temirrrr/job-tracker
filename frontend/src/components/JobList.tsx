@@ -1,5 +1,4 @@
 // src/components/JobList.tsx
-import React from 'react';
 import API from '../api';
 
 // Тип вакансии
