@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://job-tracker-production-94bb.up.railway.app/docs',
+  baseURL: 'https://job-tracker-production-94bb.up.railway.app',
 });
 
 API.interceptors.request.use(config => {
