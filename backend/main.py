@@ -24,10 +24,10 @@ app = FastAPI(title="Job Tracker")
 # Подключаем CORS-мидлвэр до всех роутов
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,       # EXACTLY эти origin
-    allow_credentials=False,     # у нас нет cookies, поэтому false
-    allow_methods=["*"],         # GET, POST, OPTIONS и т.д.
-    allow_headers=["*"],         # Content-Type, Authorization и пр.
+    allow_origins=["*"],    # любой origin
+    allow_credentials=False,# без куков/credentials
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # JWT-конфиг (в продакшене перенести в переменные окружения)
