@@ -12,13 +12,12 @@ from database import SessionLocal, engine
 # создадим все таблицы (если ещё не созданы)
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
-
 from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI(title="Job Tracker")
 
 origins = [
     "https://temirrrr.github.io",
-    "https://temirrrr.github.io/job-tracker",
     "http://localhost:5173",
     # можно добавить сюда другие домены/порты
 ]
