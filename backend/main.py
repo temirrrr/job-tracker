@@ -17,6 +17,8 @@ app = FastAPI()
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
+    "https://temirrrr.github.io",
+    "https://temirrrr.github.io/job-tracker",
     "http://localhost:5173",
     # можно добавить сюда другие домены/порты
 ]
