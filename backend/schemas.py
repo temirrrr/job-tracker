@@ -14,7 +14,7 @@ class UserCreate(UserBase):
 class UserOut(UserBase):
     id: int
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 # ----- Job schemas -----
@@ -33,4 +33,4 @@ class Job(JobBase):
     owner_id: int
     owner: UserOut
     class Config:
-        orm_mode = True
+        from_attributes = True
